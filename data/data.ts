@@ -130,7 +130,7 @@ const Resume: IResume = {
     ],
     education: [
         { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: ['Information Technologies Engineering, Software'], duration: '2019 - 2020' },
-        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: ['Information Technologies Associate, Software'], duration: '2017 - 2018' },
+        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: ['Information Technologies Associate, Software'], duration: '2016 - 2018' },
         { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: ['Digital Transformation, Course'], duration: '2020' },
         { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: ['Computer Science, Courses'], duration: '2019' },
         { name: 'Pima Community College', logo: './images/pima.png', title: ['Business Management, Courses'], duration: '2016' },
@@ -200,7 +200,7 @@ const Resume: IResume = {
             issuer: 'Universidad Tecnológica el Retoño',
             description: 'Recoginized as one of the best averages in the IT associate degree coursed from 2017 to 2018',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
-            date: 'January 2017 - December 2018'
+            date: 'September 2016 - December 2018'
         },
         {
             title: 'Talent Hackaton Finalist',
