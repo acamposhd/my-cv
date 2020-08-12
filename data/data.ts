@@ -77,8 +77,8 @@ const Resume: IResume = {
         name: "Alberto Campos",
         avatar: "./images/avatar.png",
         location: "México",
-        description: "Full-Stack & Machine Learning developer",
-        position: "Machine Learning developer @Thincrs & Full-Stack developer @UTAGS "
+        description: "Full-Stack developer",
+        position: "Full-Stack developer @Thincrs & Full-Stack developer @UTAGS "
     },
     experience: [
         {
@@ -88,11 +88,12 @@ const Resume: IResume = {
             duration: 'July 2017 - Present',
             location: 'Guadalajara, Mexico',
             description: [
-                'Development of diferent components for the landing page',
-                'Development of web services for the REST API',
-                'Development of components for the talents and evaluators applications',
-                "Development of ML models for predictions, then connect those to the REST API",
-                "Integration of the REST API with the front-end"
+                'Development of components for the landing page with Angular ',
+                'Development of web services with Laravel',
+                'Development of components for the talents and evaluators applications with React',
+                "Development of ML models for predictions, then connect those to the Laravel's REST API",
+                "Integration of the REST API with the React and Angular projects",
+                "Configuration of Jenkins to CI with the GitLab Repositories",
             ],
             stack: [
                 { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
@@ -102,7 +103,8 @@ const Resume: IResume = {
                 { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
                 { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg' },
-                { name: 'Flask', icon: 'https://cdn.svgporn.com/logos/flask.svg' }
+                { name: 'Flask', icon: 'https://cdn.svgporn.com/logos/flask.svg' },
+                { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' }
             ]
         },
         {
@@ -129,7 +131,7 @@ const Resume: IResume = {
     education: [
         { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: ['Information Technologies Engineering, Software'], duration: '2019 - 2020' },
         { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: ['Information Technologies Associate, Software'], duration: '2017 - 2018' },
-        { name: 'Massachusetts Institute of Technology', logo: './images/mit.png', title: ['Digital Transformation, Course'], duration: '2020' },
+        { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: ['Digital Transformation, Course'], duration: '2020' },
         { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: ['Computer Science, Courses'], duration: '2019' },
         { name: 'Pima Community College', logo: './images/pima.png', title: ['Business Management, Courses'], duration: '2016' },
         { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: ['Android Development, Courses'], duration: 'March 2018 - June 2018' },
@@ -182,6 +184,7 @@ const Resume: IResume = {
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg', current: true },
         { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg', current: true },
         { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg', current: true },
+        { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg', current: true },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
         { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
         { name: 'C#', icon: 'https://cdn.svgporn.com/logos/c.svg' },
