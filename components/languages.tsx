@@ -12,7 +12,7 @@ const Languages = ({ data }: LanguagesProps) => {
                 {
                     data.map((language, index) => (
                         <div key={`language_${index}`} className="Languages-language">
-                            <h6 className="Languages-language-name">{language.name}</h6>
+                            <h6 className="Languages-language-name"> <a href={language.link} target="_blank">{language.name}</a></h6>
                             <span className="Languages-language-level">{language.level}</span>
                         </div>
                     ))
