@@ -13,7 +13,7 @@ const Publications = ({ data }: PublicationsProps) => {
                     data.map((publication, index) => (
                         <div key={`publication_${index}`} className="Experience-work">
                             <div className="Experience-work-title">
-                                <h4 className="Experience-work-position">{publication.title}</h4>
+                            <a href={publication.link} target="_blank"><h4 className="Experience-work-position">{publication.title}</h4></a>
                                 <span className="Experience-work-duration">{publication.duration}</span>
                             </div>
                             <div className="Experience-work-place">

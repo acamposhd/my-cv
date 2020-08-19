@@ -24,6 +24,7 @@ export interface IPublications {
     location: string;
     duration: string;
     description: string[];
+    link: string;
 }
 
 export interface ISchoolEntity {
@@ -135,7 +136,7 @@ const Resume: IResume = {
         { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: ['Computer Science, Courses'], duration: '2019' },
         { name: 'Pima Community College', logo: './images/pima.png', title: ['Business Management, Courses'], duration: '2016' },
         { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: ['Android Development, Courses'], duration: 'March 2018 - June 2018' },
-        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: ['Visual Studio Code'], duration: '2019', credentialLink: 'http://www.lynda.com/React-js-tutorials/React-Testing-Debugging/592511-2.html' },
+        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: ['Visual Studio Code'], duration: '2019', credentialLink: 'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing' },
         { name: '', logo: './images/platzi.png', title: [
             'Carrera Bases de Datos',
             'Carrera Inglés para Profesionales',
@@ -154,8 +155,8 @@ const Resume: IResume = {
             'Curso de SQL y MySQL',
             'Curso de Bases de Datos',
             'Curso de Terminal y Línea de Comandos',
-            'Curso de Fundamentos de Google Cloud Platform'], duration: '2019-2020', credentialLink: 'https://platzi.com/@alfrejivi/curso/1099-fundamentos-javascript-2017/diploma/detalle/' },
-        { name: '', logo: './images/mongou.png', title: ['MongoDB Basics'], duration: 'August 2019' }
+            'Curso de Fundamentos de Google Cloud Platform'], duration: '2019-2020', credentialLink: 'https://drive.google.com/drive/folders/1wJ1mw0QJXFJt7gd4t79lq1_3s90u8PF6?usp=sharing' },
+        { name: '', logo: './images/mongou.png', title: ['MongoDB Basics'], duration: 'August 2019', credentialLink:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing'}
         
     ],
     publications: [
@@ -168,6 +169,7 @@ const Resume: IResume = {
             description: [
                 'Carlos Toxtli, Juan Pablo Castillo, Alberto Campos, Benjamin V. Hanraha, Kotaro Hara, Chris Callison-Burch, Jeffrey Bigham, Kristy Milland, Abigail Adams, Saiph Savage'
             ],
+            link:'https://ci.acm.org/2019/assets/proceedings/CI_2019_paper_60.pdf'
         }
         
     ],
@@ -198,7 +200,7 @@ const Resume: IResume = {
             logo: './images/utr.png',
             location: 'Aguascalientes, Mexico',
             issuer: 'Universidad Tecnológica el Retoño',
-            description: 'Recoginized as one of the best averages in the IT associate degree coursed from 2017 to 2018',
+            description: 'Recoginized as one of the best averages in the IT associate degree coursed from 2016 to 2018',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
             date: 'September 2016 - December 2018'
         },

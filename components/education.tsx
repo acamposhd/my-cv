@@ -18,7 +18,8 @@ const Education = ({ data }: EducationProps) => {
                             </div>
                             <div className="Education-entity-details">
                                 {entity.title.map((singleTitle:any) =>(
-                                    <span className="Education-entity-subject">{singleTitle}</span>
+                                    <span className="Education-entity-subject"><a href={entity.credentialLink} target="_blank">{singleTitle}</a></span>
+                                    
                                 ))}
                                 <span className="Education-entity-duration">{entity.duration}</span>
                             </div>
