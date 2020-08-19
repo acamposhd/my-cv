@@ -29,10 +29,15 @@ export interface IPublications {
     link: string;
 }
 
+export interface ISchoolAux{
+    name:string;
+    link?:string
+}
+
 export interface ISchoolEntity {
     name: string;
     logo: string;
-    title: any[];
+    title: ISchoolAux[];
     duration: string;
     credentialLink?: string;
 }
@@ -134,33 +139,33 @@ const Resume: IResume = {
         }
     ],
     education: [
-        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: ['Information Technologies Engineering, Software'], duration: '2019 - 2020' },
-        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: ['Information Technologies Associate, Software'], duration: '2016 - 2018' },
-        { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: ['Digital Transformation, Course'], duration: '2020' },
-        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: ['Computer Science, Courses'], duration: '2019' },
-        { name: 'Pima Community College', logo: './images/pima.png', title: ['Business Management, Courses'], duration: '2016' },
-        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: ['Android Development, Courses'], duration: 'March 2018 - June 2018' },
-        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: ['Visual Studio Code'], duration: '2019', credentialLink: 'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing' },
+        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{name:'Information Technologies Engineering, Software'}], duration: '2019 - 2020' },
+        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{name:'Information Technologies Associate, Software'}], duration: '2016 - 2018' },
+        { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{name:'Digital Transformation, Course', link:'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing'}], duration: '2020' },
+        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science, Courses'}], duration: 'September 2019 - December 2019' },
+        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management, Courses'}], duration: 'August 2016 - December 2016' },
+        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{name:'Android Development, Courses'}], duration: 'March 2018 - June 2018' },
+        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{name:'Visual Studio Code', link:'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing'}], duration: '2019'},
         { name: '', logo: './images/platzi.png', title: [
-            'Carrera Bases de Datos',
-            'Carrera Inglés para Profesionales',
-            'Carrera Desarrollo Backend con Go',
-            'Curso de Java SE', 
-            'Curso de Node.js',
-            'Curso de Go',
-            'Curso de MongoDB',
-            'Curso de Buenas Prácticas',
-            'Curso de HTML Y CSS',
-            'Curso de Seguridad Informática',
-            'Curso de PHP con Laravel',
-            'Curso de POO',
-            'Curso de Redes de Internet',
-            'Curso de SCRUM',
-            'Curso de SQL y MySQL',
-            'Curso de Bases de Datos',
-            'Curso de Terminal y Línea de Comandos',
-            'Curso de Fundamentos de Google Cloud Platform'], duration: '2019-2020', credentialLink: 'https://drive.google.com/drive/folders/1wJ1mw0QJXFJt7gd4t79lq1_3s90u8PF6?usp=sharing' },
-        { name: '', logo: './images/mongou.png', title: ['MongoDB Basics'], duration: 'August 2019', credentialLink:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing'}
+            {name:'Carrera Bases de Datos'},
+            {name:'Carrera Inglés para Profesionales'},
+            {name:'Carrera Desarrollo Backend con Go'},
+            {name:'Curso de Java SE'}, 
+            {name:'Curso de Node.js'},
+            {name:'Curso de Go'},
+            {name:'Curso de MongoDB'},
+            {name:'Curso de Buenas Prácticas'},
+            {name:'Curso de HTML Y CSS'},
+            {name:'Curso de Seguridad Informática'},
+            {name:'Curso de PHP con Laravel'},
+            {name:'Curso de POO'},
+            {name:'Curso de Redes de Internet'},
+            {name:'Curso de SCRUM'},
+            {name:'Curso de SQL y MySQL'},
+            {name:'Curso de Bases de Datos'},
+            {name:'Curso de Terminal y Línea de Comandos'},
+            {name:'Curso de Fundamentos de Google Cloud Platform'}], duration: '2019 - 2020', credentialLink: 'https://drive.google.com/drive/folders/1wJ1mw0QJXFJt7gd4t79lq1_3s90u8PF6?usp=sharing' },
+        { name: '', logo: './images/mongou.png', title: [{name:'MongoDB Basics', link:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'August 2019', credentialLink:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing'}
         
     ],
     publications: [
@@ -205,7 +210,7 @@ const Resume: IResume = {
             logo: './images/utr.png',
             location: 'Aguascalientes, Mexico',
             issuer: 'Universidad Tecnológica el Retoño',
-            description: 'Recoginized as one of the best averages in the IT associate degree coursed from 2016 to 2018',
+            description: 'Recoginized as one of the best grades in the IT associate degree coursed from 2016 to 2018',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
             date: 'September 2016 - December 2018'
         },
@@ -214,7 +219,7 @@ const Resume: IResume = {
             logo: './images/talent.png',
             location: 'Guadalajara, Mexico',
             issuer: 'Talent Network',
-            description: 'Team finalist in the Talent Hackathon 2018, developing a web application that analize sentiments of news on Twitter in order to find and classify fake news',
+            description: 'Part of the team finalist in the Talent Hackathon 2018, developing a web application that analize sentiments of news on Twitter in order to find and classify fake news',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
             date: 'April 2018'
         },
@@ -223,7 +228,7 @@ const Resume: IResume = {
             logo: './images/rei.png',
             location: 'Tokyo, Japan',
             issuer: 'Talent Network',
-            description: 'Winner of the `Rumbo a Japón` award in which I was recognized as one of the 10 young promises of the state, then having meetings with authorities through different places at Japan ',
+            description: 'Winner of the `Rumbo a Japón` award in which I was recognized as one of the 10 young promises of the state, then having meetings with authorities through different cities at Japan ',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
             date: 'April 2014'
         },

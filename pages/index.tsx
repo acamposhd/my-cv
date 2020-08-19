@@ -61,7 +61,7 @@ const styles = (
             flex-direction: column;
             padding: 2rem 1rem;
             width: 100vw;
-            max-width: 1500px;
+            max-width: 1340px;
             margin: auto;
             box-sizing: border-box;
         }

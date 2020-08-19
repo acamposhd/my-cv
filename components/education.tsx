@@ -14,14 +14,14 @@ const Education = ({ data }: EducationProps) => {
                         <div key={`entity_${index}`} className="Education-entity">
                             <div className="Education-entity-place">
                                 <img src={entity.logo} alt={entity.name} />
-                                <h6 className="Education-entity-name">{entity.name}</h6>
+                                <h6 className="Education-entity-name">{entity.name} <span className="Education-entity-duration">{entity.duration}</span></h6>
                             </div>
                             <div className="Education-entity-details">
+                                
                                 {entity.title.map((singleTitle:any) =>(
-                                    <span className="Education-entity-subject"><a href={entity.credentialLink} target="_blank">{singleTitle}</a></span>
+                                    <span className="Education-entity-subject Education-title">{singleTitle.name}{singleTitle.link&&<a className="Languages-links" href={singleTitle.link} target="_blank"> <img src="https://img.icons8.com/officexs/16/000000/external-link.png"/></a>}</span>
                                     
                                 ))}
-                                <span className="Education-entity-duration">{entity.duration}</span>
                             </div>
                         </div>
                     ))
@@ -38,6 +38,9 @@ const Education = ({ data }: EducationProps) => {
 
                     .Education-entity{
                         margin: 1rem 0;
+                    }
+                    .Education-title{
+                        margin-bottom:5px;
                     }
 
                     .Education-entity-place {
