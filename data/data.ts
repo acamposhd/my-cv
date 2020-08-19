@@ -1,4 +1,5 @@
 import { string } from "prop-types";
+import { link } from "fs";
 
 export interface IIntroduction {
     name: string;
@@ -16,6 +17,7 @@ export interface IWork {
     duration: string;
     description: string[];
     stack: { name: string; icon: string; }[];
+    link?:string;
 }
 export interface IPublications {
     title: string;
@@ -54,6 +56,7 @@ export interface IAward {
 export interface ILanguage {
     name: string;
     level: string;
+    link?:string;
 }
 
 export interface IContact {
@@ -106,7 +109,8 @@ const Resume: IResume = {
                 { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg' },
                 { name: 'Flask', icon: 'https://cdn.svgporn.com/logos/flask.svg' },
                 { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' }
-            ]
+            ],
+            link:"https://thincrs.com/"
         },
         {
             title: 'Full-Stack Developer',
@@ -179,6 +183,7 @@ const Resume: IResume = {
         { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg', current: true },
         { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
         { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg', current:true },
+        { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg', current:true },
         { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg', current: true },
         { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg', current: true },
         { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg', current: true },
@@ -226,7 +231,8 @@ const Resume: IResume = {
     languages: [
         {
             name: 'English',
-            level: 'Professional working proficiency'
+            level: 'Professional working proficiency',
+            link: 'https://drive.google.com/file/d/1MstZQcQz7T6Kh6_vtqMAPDwn1jEKBOFa/view?usp=sharing'
         },
         {
             name: 'Spanish',
