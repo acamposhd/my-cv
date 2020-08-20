@@ -97,12 +97,11 @@ const Resume: IResume = {
             duration: 'July 2017 - Present',
             location: 'Guadalajara, Mexico',
             description: [
-                'Development of components for the landing page with Angular ',
-                'Development of web services with Laravel',
-                'Development of components for the talents and evaluators applications with React',
+                'Full-stack development of the landing page, REST API and internship admin',
                 "Development of ML models for predictions, then connect those to the Laravel's REST API",
                 "Integration of the REST API with the React and Angular projects",
-                "Configuration of Jenkins to CI with the GitLab Repositories",
+                "Configuration of Jenkins and pipelines to deploy the GitLab Repositories",
+                'Involved into the planning/designing phase for the applications.'
             ],
             stack: [
                 { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
@@ -125,12 +124,15 @@ const Resume: IResume = {
             location: 'Aguascalientes, México',
             description: [
                 'Full-stack development for different projects using the MEAN and MEIN stacks',
+                'Leader of different teams',
+                'Subject teacher of multi-platform application development',
                 'Involved into the planning/designing phase for the applications.'
             ],
             stack: [
                 { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
                 { name: 'Expressjs', icon: 'https://cdn.svgporn.com/logos/express.svg' },
                 { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
+                { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg' },
                 { name: 'Nodejs', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
                 { name: 'Typescript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
                 { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
@@ -162,8 +164,8 @@ const Resume: IResume = {
             {name:'Curso de SCRUM', link:"https://drive.google.com/file/d/1B0ZLkBKKt-3eTgcLfu8WeftTxh5o4Hqq/view?usp=sharing"},
             {name:'Curso de SQL y MySQL', link:"https://drive.google.com/file/d/1hI3P6lFFxy1jMpTYOjyClrX09FGgUYfz/view?usp=sharing"},
             {name:'Curso de Bases de Datos', link:"https://drive.google.com/file/d/1QP1fXI-DWCUb-wWKkA7jpi28h4MhLAFc/view?usp=sharing"},
-            {name:'Curso de Terminal y Línea de Comandos', link:"https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing"},
-            {name:'Curso de Fundamentos de Google Cloud Platform', link:"https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing"}], duration: '2019 - 2020', credentialLink: 'https://drive.google.com/drive/folders/1wJ1mw0QJXFJt7gd4t79lq1_3s90u8PF6?usp=sharing' },
+            {name:'Curso de Línea de Comandos', link:"https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing"},
+            {name:'Curso de Google Cloud Platform', link:"https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing"}], duration: '2019 - 2020', credentialLink: 'https://drive.google.com/drive/folders/1wJ1mw0QJXFJt7gd4t79lq1_3s90u8PF6?usp=sharing' },
         { name: '', logo: './images/mongou.png', title: [{name:'MongoDB Basics', link:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'August 2019', credentialLink:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing'}
         
     ],
@@ -195,6 +197,7 @@ const Resume: IResume = {
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg', current: true },
         { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg', current: true },
         { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg', current: true },
+        { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg', current: true },
         { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg', current: true },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
         { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
@@ -202,6 +205,7 @@ const Resume: IResume = {
         { name: 'Go', icon: 'https://cdn.svgporn.com/logos/go.svg' },
         { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
         { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg'},
+        { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg'},
     ],
     awards: [
         {

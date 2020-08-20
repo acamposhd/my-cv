@@ -13,13 +13,13 @@ const Experience = ({ data }: ExperienceProps) => {
                     data.map((work, index) => (
                         <div key={`work_${index}`} className="Experience-work">
                             <div className="Experience-work-title">
-                                <h4 className="Experience-work-position">{work.title}</h4>
+                    <h4 className="Experience-work-position">{work.title}</h4>
                                 <span className="Experience-work-duration">{work.duration}</span>
                             </div>
                             <div className="Experience-work-place">
-                                <img src={work.logo} alt={work.company} />
+                                <img src={work.logo} alt={work.company}/>
                                 <div>
-                                    <h6 className="Experience-work-company">{work.company}</h6>
+                                    <h6 className="Experience-work-company">{work.company} {work.link&&<a className="Languages-links" href={work.link} target="_blank"> <img src="https://img.icons8.com/officexs/16/000000/external-link.png"/></a>}</h6>
                                     <span className="Experience-work-location">{work.location}</span>
                                 </div>
                             </div>
