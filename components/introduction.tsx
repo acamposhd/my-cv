@@ -45,7 +45,12 @@ const Introduction = ({ data }: IntroductionProps) => {
                     .Introduction-title{
                         font-size: 1.2rem;
                         margin-top: .5rem;
-                    }                    
+                    }    
+                    .Introduction-qr{
+                        float:right;
+                        width:100px;
+                        height:100px:
+                    }                
                 `}
             </style>
         </>
