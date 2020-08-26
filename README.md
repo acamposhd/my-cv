@@ -4,16 +4,12 @@
 
 Please go and change the `data/data.tsx` file to fill the CV/Resume with your personal information Feel free to use it and customize it as much as you desire.
 
-To view a live example, **[click here](https://freddyjimenez.dev)**
 
 ## Getting Started
 
 From your command line, clone and run this repository running:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/alfrejivi/my-cv.git
-
 # Go into the repository
 $ cd /my-cv
 
@@ -36,31 +32,6 @@ GA_ID=UA-XXXXXXXX-X
 
 Store any public assets in `public` folder and access to them as root folder in your website `./`
 
-
-## Customize every section in `/data/data.tsx` with your own information.
-
-```javascript
-/* Change this file to have your own CV / Resume data */
-
-const Resume: IResume = {
-    /* Your summary and introduction */
-    introduction: {
-        name: "Freddy Jimenez",
-        avatar: "./images/avatar.jpg",
-        location: "Amsterdam, The Netherlands",
-        description: "I'm a happy Software Developer :)",
-        position: "Fullstack Engineer @awesome-company"
-    },
-    /* Your work experience */
-    experience: [ ... ],
-    education: [ ... ],
-    skills: [ ... ],
-    awards: [ ... ],
-    languages: [ ... ],
-    contact: [ ... ]
-};
-```
-
 ## Technologies used
 
 - [React](https://reactjs.org/)
@@ -70,18 +41,6 @@ const Resume: IResume = {
 
 ## Deployment
 I'm currently using [ZEIT Now](https://zeit.co/) and I highly recommend to use it. Please go to the [docs](https://zeit.co/docs) to see how incredibly easy and fast is to deploy with it.
-
-## Contribute
-
-If you are interested in **contribute** and make this project much better for the community, plese open a [pull request](https://github.com/alfrejivi/my-cv/pulls) or take a look at the [issues](https://github.com/alfrejivi/my-cv/issues).
-
-## Contact
-
-Freddy Jimenez :
-[alfrejivi@gmail.com](mailto:alfrejivi@gmail.com) |
-[alfrejivi.com](https://alfrejivi.com) |
-[Linkedin](https://www.linkedin.com/in/alfrejivi/) |
-[Github](https://github.com/alfrejivi)
 
 ## Other info
 For more information please visit https://nextjs.org/docs 
