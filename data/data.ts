@@ -144,10 +144,10 @@ const Resume: IResume = {
         { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{name:'Information Technologies Engineering Degree'}], duration: '2019 - 2020' },
         { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{name:'Information Technologies Associate Degree'}], duration: '2016 - 2018' },
         { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{name:'Digital Transformation Course', link:'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing'}], duration: '2020' },
-        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science Course'}], duration: 'September 2019 - December 2019' },
-        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management Course'}], duration: 'August 2016 - December 2016' },
+        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science Courses'}], duration: 'September 2019 - December 2019' },
+        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management Courses'}], duration: 'August 2016 - December 2016' },
         { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{name:'Android Development Course'}], duration: 'March 2018 - June 2018' },
-        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{name:'Visual Studio Code', link:'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing'}], duration: '2019'},
+        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{name:'Visual Studio Code Course', link:'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing'}], duration: '2019'},
         { name: '', logo: './images/platzi.png', title: [
             {name:'Carrera Bases de Datos', link:"https://drive.google.com/file/d/1ykl1lhA9PAFY4SswFHnOVP77bTQafl_s/view?usp=sharing"},
             {name:'Carrera Escuela de Inglés', link:"https://drive.google.com/file/d/1_QInJ20Q8-cQL3UP3Gv1AYK9GrMlue7U/view?usp=sharing"},
@@ -223,15 +223,6 @@ const Resume: IResume = {
             location: 'Guadalajara, Mexico',
             issuer: 'Talent Network',
             description: 'Part of the team finalist in the Talent Hackathon 2018, developing a web application that analize sentiments of news on Twitter in order to find and classify fake news',
-            link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
-            date: 'April 2018'
-        },
-        {
-            title: 'Agua Hackaton CFOX',
-            logo: './images/cfox.png',
-            location: 'Guanajuato, Mexico',
-            issuer: 'Centro Fox',
-            description: 'Part of the TOP 10 projects with a mobile application that helps to control how much water you spend and give tips to improve its use.',
             link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
             date: 'April 2018'
         },
