@@ -251,6 +251,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
+        { name: 'CV Versión PDF', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/172yAI8BEdDhsoVF5tWrTR69Lfea5mRRx/view?usp=sharing' },
     ]
 };
 
