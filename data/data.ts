@@ -142,11 +142,11 @@ const Resume: IResume = {
     ],
     education: [
         { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{name:'Information Technologies Engineering Degree'}], duration: '2019 - 2020' },
-        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{name:'Information Technologies Associate Degree'}], duration: '2016 - 2018' },
+        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{name:'Information Technologies Associate Degree'}], duration: '2016 - 2018', credentialLink:'https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=11976389&idProfesionista=12044514&token=B52FE21401F6A677382711BB8723AD4955343357' },
         { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{name:'Digital Transformation Course', link:'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing'}], duration: '2020' },
-        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science Courses'}], duration: 'September 2019 - December 2019' },
-        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management Courses'}], duration: 'August 2016 - December 2016' },
-        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{name:'Android Development Course'}], duration: 'March 2018 - June 2018' },
+        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science Courses'}], duration: 'September 2019 - December 2019', credentialLink:'https://drive.google.com/file/d/1WJXy2NJ5pv7u_OabFpm6rO_ItWa1WjwA/view?usp=sharing' },
+        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management Courses'}], duration: 'August 2016 - December 2016', credentialLink:'https://drive.google.com/drive/folders/1EWrExdYOMfuhdA84hI8r3JPFdSx5zyeT?usp=sharing' },
+        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{name:'Android Development Course'}], duration: 'March 2018 - June 2018', credentialLink:'https://drive.google.com/file/d/1fjpchjzOeNHi6nugN1G4Kytz0sBcvT8w/view?usp=sharing' },
         { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{name:'Visual Studio Code Course', link:'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing'}], duration: '2019'},
         { name: '', logo: './images/platzi.png', title: [
             {name:'Carrera Bases de Datos', link:"https://drive.google.com/file/d/1ykl1lhA9PAFY4SswFHnOVP77bTQafl_s/view?usp=sharing"},
@@ -214,7 +214,7 @@ const Resume: IResume = {
             location: 'Aguascalientes, Mexico',
             issuer: 'Universidad Tecnológica el Retoño',
             description: 'Recoginized as one of the best grades in the IT associate degree coursed from 2016 to 2018',
-            link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
+            link: 'https://drive.google.com/file/d/1W95ZWriBJY5sPt1YamYpXiAJYjo9oPs2/view?usp=sharing',
             date: 'September 2016 - December 2018'
         },
         {
@@ -223,7 +223,7 @@ const Resume: IResume = {
             location: 'Guadalajara, Mexico',
             issuer: 'Talent Network',
             description: 'Part of the team finalist in the Talent Hackathon 2018, developing a web application that analize sentiments of news on Twitter in order to find and classify fake news',
-            link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
+            link: 'https://docs.google.com/presentation/d/1dIo6zhKyyUEfm4v3PKpuQMlzXGi10rxLB_AIcJmyNro/edit?usp=sharing',
             date: 'April 2018'
         },
         {
@@ -232,7 +232,7 @@ const Resume: IResume = {
             location: 'Tokyo, Japan',
             issuer: 'Talent Network',
             description: 'Winner of the `Rumbo a Japón` award in which I was recognized as one of the 10 young promises of the state, then having meetings with authorities through different cities at Japan ',
-            link: 'http://www.youtube.com/watch?feature=player_embedded&v=QQL9PpvNwRo',
+            link: 'https://drive.google.com/drive/folders/1eGYdPm9LNiyN0hPg4LNh5TvSzyBSbvyI?usp=sharing',
             date: 'April 2014'
         },
     ],
