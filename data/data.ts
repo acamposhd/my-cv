@@ -167,7 +167,9 @@ const Resume: IResume = {
             {name:'Curso de Línea de Comandos', link:"https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing"},
             {name:'Curso de Google Cloud Platform', link:"https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing"}], duration: '2019 - 2020' },
         { name: 'Mongo University', logo: './images/mongou.png', title: [{name:'MongoDB Basics', link:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'August 2019'},
-        { name: 'HackerRank', logo: './images/hackerrank.png', title: [{name:'JavaScript Basics', link:'https://drive.google.com/file/d/1FFPlmVaWSeWPOQZan1SBaOsZRMGyomeM/view?usp=sharing' }], duration: 'September 2020'},
+        { name: 'HackerRank', logo: './images/hackerrank.png', title: [
+            {name:'JavaScript Basics', link:'https://drive.google.com/file/d/1FFPlmVaWSeWPOQZan1SBaOsZRMGyomeM/view?usp=sharing' },
+            {name:'Rest API Intermediate', link:'https://drive.google.com/file/d/172FzWrhOcD8JJYBe9j6rOlqQuWMtvFIA/view?usp=sharing' }], duration: 'September 2020'},
         
     ],
     publications: [
