@@ -87,9 +87,41 @@ const Resume: IResume = {
         avatar: "./images/avatar.jpeg",
         location: "México",
         description: "IT engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
-        position: "Full-Stack developer @Thincrs & Full-Stack developer @UTAGS "
+        position: "Full Stack Engineer @ Irys"
     },
     experience: [
+        {
+            title: 'Full-Stack Engineer',
+            company: 'Irys',
+            logo: './images/irys.png',
+            duration: 'September 2020 - Present',
+            location: 'San Antonio, Texas',
+            description: [
+                'Design and develop front-end interfaces, APIs and backend systems accross a number of programming languages.',
+                "Participate in all phases of software development from product definition to production release.",
+                "Build prototypes and engage in full-stack application development.",
+                "Work with QA teams to troubleshoot issues on software prodcts and develop testing scenarios prior to coding, during sprint planning.",
+                'Author technical design documentation that fully defines all application code and the underlying methodology for the design decisions.',
+                'Contribute to peer code review to ensure overall quality of software.',
+            ],
+            stack: [
+                { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/context.svg' },
+                { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Atomic design', icon: 'https://cdn.svgporn.com/logos/atomic.svg' },
+                { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws-amplify.svg' },
+                { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
+                { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
+                { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws-appsync.svg' },
+                { name: 'AWS DynamoDB', icon: 'https://cdn.svgporn.com/logos/aws-dynamodb.svg' },
+                { name: 'AWS Aurora', icon: 'https://cdn.svgporn.com/logos/aws-aurora.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Gitflow', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Cypress', icon: 'https://cdn.svgporn.com/logos/python.svg' },
+            ],
+            link:"https://heyirys.com/"
+        },
         {
             title: 'Full-Stack Developer',
             company: 'Thincrs',
