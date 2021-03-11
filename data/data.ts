@@ -17,7 +17,7 @@ export interface IWork {
     duration: string;
     description: string[];
     stack: { name: string; icon: string; }[];
-    link?:string;
+    link?: string;
 }
 export interface IPublications {
     title: string;
@@ -29,9 +29,9 @@ export interface IPublications {
     link: string;
 }
 
-export interface ISchoolAux{
-    name:string;
-    link?:string
+export interface ISchoolAux {
+    name: string;
+    link?: string
 }
 
 export interface ISchoolEntity {
@@ -61,7 +61,7 @@ export interface IAward {
 export interface ILanguage {
     name: string;
     level: string;
-    link?:string;
+    link?: string;
 }
 
 export interface IContact {
@@ -107,20 +107,20 @@ const Resume: IResume = {
             stack: [
                 { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
-                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/context.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'Atomic design', icon: 'https://cdn.svgporn.com/logos/atomic.svg' },
-                { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws-amplify.svg' },
+                { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
                 { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
-                { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws-appsync.svg' },
+                { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'AWS DynamoDB', icon: 'https://cdn.svgporn.com/logos/aws-dynamodb.svg' },
-                { name: 'AWS Aurora', icon: 'https://cdn.svgporn.com/logos/aws-aurora.svg' },
+                { name: 'AWS Aurora', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
                 { name: 'Gitflow', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
                 { name: 'Cypress', icon: 'https://cdn.svgporn.com/logos/python.svg' },
             ],
-            link:"https://heyirys.com/"
+            link: "https://heyirys.com/"
         },
         {
             title: 'Full-Stack Developer',
@@ -146,7 +146,7 @@ const Resume: IResume = {
                 { name: 'Flask', icon: 'https://cdn.svgporn.com/logos/flask.svg' },
                 { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' }
             ],
-            link:"https://thincrs.com/"
+            link: "https://thincrs.com/"
         },
         {
             title: 'Full-Stack Developer',
@@ -173,36 +173,40 @@ const Resume: IResume = {
         }
     ],
     education: [
-        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{name:'Information Technologies Engineering Degree'}], duration: '2019 - 2020' },
-        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{name:'Information Technologies Associate Degree', link:'https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=11976389&idProfesionista=12044514&token=B52FE21401F6A677382711BB8723AD4955343357'}], duration: '2016 - 2018' },
-        { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{name:'Digital Transformation Course', link:'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing'}], duration: '2020' },
-        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{name:'Computer Science Courses', link:'https://drive.google.com/file/d/1WJXy2NJ5pv7u_OabFpm6rO_ItWa1WjwA/view?usp=sharing'}], duration: 'September 2019 - December 2019' },
-        { name: 'Pima Community College', logo: './images/pima.png', title: [{name:'Business Management Courses', link:'https://drive.google.com/drive/folders/1EWrExdYOMfuhdA84hI8r3JPFdSx5zyeT?usp=sharing'}], duration: 'August 2016 - December 2016' },
-        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{name:'Android Development Course', link:'https://drive.google.com/file/d/1fjpchjzOeNHi6nugN1G4Kytz0sBcvT8w/view?usp=sharing'}], duration: 'March 2018 - June 2018' },
-        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{name:'Visual Studio Code Course', link:'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing'}], duration: '2019'},
-        { name: '', logo: './images/platzi.png', title: [
-            {name:'Carrera Bases de Datos', link:"https://drive.google.com/file/d/1ykl1lhA9PAFY4SswFHnOVP77bTQafl_s/view?usp=sharing"},
-            {name:'Carrera Escuela de Inglés', link:"https://drive.google.com/file/d/1_QInJ20Q8-cQL3UP3Gv1AYK9GrMlue7U/view?usp=sharing"},
-            {name:'Carrera Desarrollo Backend con Go', link:"https://drive.google.com/file/d/1k5JvGKuqDJs4y6AEjOa4KPOnGav9l_6x/view?usp=sharing"},
-            {name:'Curso de Java SE', link:"https://drive.google.com/file/d/1du9GL1WuQUxHVV2g2qfKBh4_MMy0dM34/view?usp=sharing"}, 
-            {name:'Curso de Go', link:"https://drive.google.com/file/d/16K82p7zcTB2q7Rg2ZVijWu00l23Y12F1/view?usp=sharing"},
-            {name:'Curso de MongoDB', link:"https://drive.google.com/file/d/199HYQkywELbg6Vjcs0-Uu8FnEcqiQzIl/view?usp=sharing"},
-            {name:'Curso de Buenas Prácticas', link:"https://drive.google.com/file/d/1h3tjSbAI5iR19MmeBKXUfw21IhQvGoTg/view?usp=sharing"},
-            {name:'Curso de HTML Y CSS', link:"https://drive.google.com/file/d/1CDvBQhLxaLGKGril1Qh4OC042ftlQgfk/view?usp=sharing"},
-            {name:'Curso de Seguridad Informática', link:"https://drive.google.com/file/d/13WR_pUUhF2HdAtiSDh98IPKUFfYcRT3F/view?usp=sharing"},
-            {name:'Curso de PHP con Laravel', link:"https://drive.google.com/file/d/1xoYfitKYbzfGeXt2Km96GQqSFySntJe_/view?usp=sharing"},
-            {name:'Curso de POO', link:"https://drive.google.com/file/d/17yGlcp-bfF-z0IQ3LupbESaRKbVixN18/view?usp=sharing"},
-            {name:'Curso de Redes de Internet', link:"https://drive.google.com/file/d/17DvfvnblWyTMzXAkcdR3iu2yNPApU1Vb/view?usp=sharing"},
-            {name:'Curso de SCRUM', link:"https://drive.google.com/file/d/1B0ZLkBKKt-3eTgcLfu8WeftTxh5o4Hqq/view?usp=sharing"},
-            {name:'Curso de SQL y MySQL', link:"https://drive.google.com/file/d/1hI3P6lFFxy1jMpTYOjyClrX09FGgUYfz/view?usp=sharing"},
-            {name:'Curso de Bases de Datos', link:"https://drive.google.com/file/d/1QP1fXI-DWCUb-wWKkA7jpi28h4MhLAFc/view?usp=sharing"},
-            {name:'Curso de Línea de Comandos', link:"https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing"},
-            {name:'Curso de Google Cloud Platform', link:"https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing"}], duration: '2019 - 2020' },
-        { name: 'Mongo University', logo: './images/mongou.png', title: [{name:'MongoDB Basics', link:'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'August 2019'},
-        { name: 'HackerRank', logo: './images/hackerrank.png', title: [
-            {name:'JavaScript Basics', link:'https://drive.google.com/file/d/1FFPlmVaWSeWPOQZan1SBaOsZRMGyomeM/view?usp=sharing' },
-            {name:'Rest API Intermediate', link:'https://drive.google.com/file/d/172FzWrhOcD8JJYBe9j6rOlqQuWMtvFIA/view?usp=sharing' }], duration: 'September 2020'},
-        
+        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{ name: 'Information Technologies Engineering Degree', link: "https://drive.google.com/file/d/162REfsZSKsd9CGmKWv77lwasLXhQ5ZiC/view?usp=sharing" }], duration: '2019 - 2020' },
+        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{ name: 'Information Technologies Associate Degree', link: 'https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=11976389&idProfesionista=12044514&token=B52FE21401F6A677382711BB8723AD4955343357' }], duration: '2016 - 2018' },
+        { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{ name: 'Digital Transformation Course', link: 'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing' }], duration: '2020' },
+        { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{ name: 'Computer Science Courses', link: 'https://drive.google.com/file/d/1WJXy2NJ5pv7u_OabFpm6rO_ItWa1WjwA/view?usp=sharing' }], duration: 'September 2019 - December 2019' },
+        { name: 'Pima Community College', logo: './images/pima.png', title: [{ name: 'Business Management Courses', link: 'https://drive.google.com/drive/folders/1EWrExdYOMfuhdA84hI8r3JPFdSx5zyeT?usp=sharing' }], duration: 'August 2016 - December 2016' },
+        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{ name: 'Android Development Course', link: 'https://drive.google.com/file/d/1fjpchjzOeNHi6nugN1G4Kytz0sBcvT8w/view?usp=sharing' }], duration: 'March 2018 - June 2018' },
+        { name: 'Linkedin Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{ name: 'Visual Studio Code Course', link: 'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing' }], duration: '2019' },
+        {
+            name: '', logo: './images/platzi.png', title: [
+                { name: 'Carrera Bases de Datos', link: "https://drive.google.com/file/d/1ykl1lhA9PAFY4SswFHnOVP77bTQafl_s/view?usp=sharing" },
+                { name: 'Carrera Escuela de Inglés', link: "https://drive.google.com/file/d/1_QInJ20Q8-cQL3UP3Gv1AYK9GrMlue7U/view?usp=sharing" },
+                { name: 'Carrera Desarrollo Backend con Go', link: "https://drive.google.com/file/d/1k5JvGKuqDJs4y6AEjOa4KPOnGav9l_6x/view?usp=sharing" },
+                { name: 'Curso de Java SE', link: "https://drive.google.com/file/d/1du9GL1WuQUxHVV2g2qfKBh4_MMy0dM34/view?usp=sharing" },
+                { name: 'Curso de Go', link: "https://drive.google.com/file/d/16K82p7zcTB2q7Rg2ZVijWu00l23Y12F1/view?usp=sharing" },
+                { name: 'Curso de MongoDB', link: "https://drive.google.com/file/d/199HYQkywELbg6Vjcs0-Uu8FnEcqiQzIl/view?usp=sharing" },
+                { name: 'Curso de Buenas Prácticas', link: "https://drive.google.com/file/d/1h3tjSbAI5iR19MmeBKXUfw21IhQvGoTg/view?usp=sharing" },
+                { name: 'Curso de HTML Y CSS', link: "https://drive.google.com/file/d/1CDvBQhLxaLGKGril1Qh4OC042ftlQgfk/view?usp=sharing" },
+                { name: 'Curso de Seguridad Informática', link: "https://drive.google.com/file/d/13WR_pUUhF2HdAtiSDh98IPKUFfYcRT3F/view?usp=sharing" },
+                { name: 'Curso de PHP con Laravel', link: "https://drive.google.com/file/d/1xoYfitKYbzfGeXt2Km96GQqSFySntJe_/view?usp=sharing" },
+                { name: 'Curso de POO', link: "https://drive.google.com/file/d/17yGlcp-bfF-z0IQ3LupbESaRKbVixN18/view?usp=sharing" },
+                { name: 'Curso de Redes de Internet', link: "https://drive.google.com/file/d/17DvfvnblWyTMzXAkcdR3iu2yNPApU1Vb/view?usp=sharing" },
+                { name: 'Curso de SCRUM', link: "https://drive.google.com/file/d/1B0ZLkBKKt-3eTgcLfu8WeftTxh5o4Hqq/view?usp=sharing" },
+                { name: 'Curso de SQL y MySQL', link: "https://drive.google.com/file/d/1hI3P6lFFxy1jMpTYOjyClrX09FGgUYfz/view?usp=sharing" },
+                { name: 'Curso de Bases de Datos', link: "https://drive.google.com/file/d/1QP1fXI-DWCUb-wWKkA7jpi28h4MhLAFc/view?usp=sharing" },
+                { name: 'Curso de Línea de Comandos', link: "https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing" },
+                { name: 'Curso de Google Cloud Platform', link: "https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing" }], duration: '2019 - 2020'
+        },
+        { name: 'Mongo University', logo: './images/mongou.png', title: [{ name: 'MongoDB Basics', link: 'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'August 2019' },
+        {
+            name: 'HackerRank', logo: './images/hackerrank.png', title: [
+                { name: 'JavaScript Basics', link: 'https://drive.google.com/file/d/1FFPlmVaWSeWPOQZan1SBaOsZRMGyomeM/view?usp=sharing' },
+                { name: 'Rest API Intermediate', link: 'https://drive.google.com/file/d/172FzWrhOcD8JJYBe9j6rOlqQuWMtvFIA/view?usp=sharing' }], duration: 'September 2020'
+        },
+
     ],
     publications: [
         {
@@ -214,19 +218,20 @@ const Resume: IResume = {
             description: [
                 'Carlos Toxtli, Juan Pablo Castillo, Alberto Campos, Benjamin V. Hanraha, Kotaro Hara, Chris Callison-Burch, Jeffrey Bigham, Kristy Milland, Abigail Adams, Saiph Savage'
             ],
-            link:'https://ci.acm.org/2019/assets/proceedings/CI_2019_paper_60.pdf'
+            link: 'https://ci.acm.org/2019/assets/proceedings/CI_2019_paper_60.pdf'
         }
-        
+
     ],
     skills: [
-        { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current:true },
+        { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
         { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
-        { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg', current: true },
+        { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
+        { name: 'Context', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
+        { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg', current: true },
+        { name: 'AWS Cloud Infrastructure', icon: 'https://cdn.svgporn.com/logos/aws.svg', current: true },
+        { name: 'Cypress', icon: 'https://cdn.svgporn.com/logos/cypress.svg', current: true },
         { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
-        { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg', current:true },
-        { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg', current:true },
         { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg', current: true },
-        { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg', current: true },
         { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg', current: true },
         { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg', current: true },
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg', current: true },
@@ -234,13 +239,18 @@ const Resume: IResume = {
         { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg', current: true },
         { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg', current: true },
         { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg', current: true },
+        { name: 'Figma', icon: 'https://cdn.svgporn.com/logos/figma.svg', current: true },
+        { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
+        { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
+        { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
+        { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg' },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
         { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
         { name: 'C#', icon: 'https://cdn.svgporn.com/logos/c.svg' },
         { name: 'Go', icon: 'https://cdn.svgporn.com/logos/go.svg' },
         { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
-        { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg'},
-        { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg'},
+        { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
+        { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg' },
     ],
     awards: [
         {
@@ -286,7 +296,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
-        { name: 'CV Versión PDF', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/172yAI8BEdDhsoVF5tWrTR69Lfea5mRRx/view?usp=sharing' },
+        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1NJflcGpzD1tJvu-ysaf-cMsFwMMwJsp2/view?usp=sharing' },
     ]
 };
 
