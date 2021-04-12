@@ -126,7 +126,7 @@ const Resume: IResume = {
             title: 'Full-Stack Developer',
             company: 'Thincrs',
             logo: './images/thincrs.png',
-            duration: 'July 2017 - Present',
+            duration: 'July 2017 - September 2020',
             location: 'Guadalajara, Mexico',
             description: [
                 'Full-stack development of the landing page, REST API and internship admin',
@@ -152,7 +152,7 @@ const Resume: IResume = {
             title: 'Full-Stack Developer',
             company: 'Universidad Tecnológica de Aguascalientes',
             logo: './images/utags.png',
-            duration: 'January 2019 - Present',
+            duration: 'January 2019 - December 2020',
             location: 'Aguascalientes, México',
             description: [
                 'Full-stack development for different projects using the MEAN and MEIN stacks',
