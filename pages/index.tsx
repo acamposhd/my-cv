@@ -140,9 +140,9 @@ const Resume = () => (
   </section>
 );
 
-const pause = () => {
+const Pause = () => {
   return <p>Coming soon</p>;
 };
 
 // export default withGA(process.env.GA_ID, Router)(Resume);
-export default pause();
+export default Pause();
