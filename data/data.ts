@@ -296,7 +296,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
-        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1z4SFyLw9i_INfsnXZV8uWXxKFxYFCurs/view?usp=sharing' },
+        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1FQdtsxeZ91TLPhQBE--f2xjB0B-YF_pE/view?usp=sharing' },
     ]
 };
 
