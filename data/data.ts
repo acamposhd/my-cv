@@ -97,7 +97,7 @@ const Resume: IResume = {
             duration: 'September 2020 - Present',
             location: 'San Antonio, Texas',
             description: [
-                'Design and develop front-end interfaces, APIs and backend systems accross a number of programming languages.',
+                'Design and develop front-end interfaces, APIs and backend systems s using React, React Native, Express and AWS cloud infrastructure(Appsync, Amplify, etc).',
                 "Participate in all phases of software development from product definition to production release.",
                 "Build prototypes and engage in full-stack application development.",
                 "Work with QA teams to troubleshoot issues on software prodcts and develop testing scenarios prior to coding, during sprint planning.",
