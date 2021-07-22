@@ -110,6 +110,7 @@ const Resume: IResume = {
                 { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'Atomic design', icon: 'https://cdn.svgporn.com/logos/atomic.svg' },
+                { name: 'Expressjs', icon: 'https://cdn.svgporn.com/logos/express.svg' },
                 { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
                 { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
@@ -225,6 +226,7 @@ const Resume: IResume = {
     skills: [
         { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
         { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
+        { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.sv', current: true },
         { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Context', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg', current: true },
@@ -238,14 +240,14 @@ const Resume: IResume = {
         { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg', current: true },
         { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg', current: true },
         { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg', current: true },
-        { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg', current: true },
         { name: 'Figma', icon: 'https://cdn.svgporn.com/logos/figma.svg', current: true },
+        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg', current: true },
+        { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' },
         { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
         { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
         { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
         { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg' },
         { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
-        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
         { name: 'C#', icon: 'https://cdn.svgporn.com/logos/c.svg' },
         { name: 'Go', icon: 'https://cdn.svgporn.com/logos/go.svg' },
         { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
@@ -296,7 +298,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
-        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1FQdtsxeZ91TLPhQBE--f2xjB0B-YF_pE/view?usp=sharing' },
+        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1dPCE15IHPAmg389prba0N2VEYBjW8Qjt/view?usp=sharing' },
     ]
 };
 
