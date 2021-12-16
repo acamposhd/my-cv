@@ -174,8 +174,8 @@ const Resume: IResume = {
         }
     ],
     education: [
-        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{ name: 'Information Technologies Engineering Degree', link: "https://drive.google.com/file/d/162REfsZSKsd9CGmKWv77lwasLXhQ5ZiC/view?usp=sharing" }], duration: '2019 - 2020' },
-        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{ name: 'Information Technologies Associate Degree', link: 'https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=11976389&idProfesionista=12044514&token=B52FE21401F6A677382711BB8723AD4955343357' }], duration: '2016 - 2018' },
+        { name: 'Universidad Tecnológica de Aguascalientes', logo: './images/utags.png', title: [{ name: 'Information Technologies Engineering Degree', link: "http://cedula.buholegal.com/12628232/" }], duration: '2019 - 2020' },
+        { name: 'Universidad Tecnológica el Retoño', logo: './images/utr.png', title: [{ name: 'Information Technologies Associate Degree', link: 'http://cedula.buholegal.com/11976389/' }], duration: '2016 - 2018' },
         { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{ name: 'Digital Transformation Course', link: 'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing' }], duration: '2020' },
         { name: 'Algonquin College of Applied Arts and Technology', logo: './images/ac.png', title: [{ name: 'Computer Science Courses', link: 'https://drive.google.com/file/d/1WJXy2NJ5pv7u_OabFpm6rO_ItWa1WjwA/view?usp=sharing' }], duration: 'September 2019 - December 2019' },
         { name: 'Pima Community College', logo: './images/pima.png', title: [{ name: 'Business Management Courses', link: 'https://drive.google.com/drive/folders/1EWrExdYOMfuhdA84hI8r3JPFdSx5zyeT?usp=sharing' }], duration: 'August 2016 - December 2016' },
