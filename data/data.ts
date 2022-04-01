@@ -285,7 +285,7 @@ const Resume: IResume = {
             issuer: 'Universidad Tecnológica de Aguascalientes',
             description: 'Recoginized as the best grade of the generation (all engineering majors) from 2016 to 2019 to 2020',
             link: 'https://drive.google.com/file/d/1JBGksnJ2pF-a55z6SdGj9Y612fD4Nhed/view?usp=sharing',
-            date: 'September 2016 - December 2018'
+            date: 'January 2019 - August 2020'
         },
         {
             title: 'Honorable Mention in the IT Associate Degree',
