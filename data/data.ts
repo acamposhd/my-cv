@@ -106,6 +106,7 @@ const Resume: IResume = {
             ],
             stack: [
                 { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Next', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg' },
                 { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
                 { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
@@ -122,6 +123,27 @@ const Resume: IResume = {
                 { name: 'Cypress', icon: 'https://cdn.svgporn.com/logos/python.svg' },
             ],
             link: "https://heyirys.com/"
+        },
+        {
+            title: 'Professor',
+            company: 'Universidad Tecnológica de Aguascalientes',
+            logo: './images/utags.png',
+            duration: 'September 2021 - Present',
+            location: 'Aguascalientes, México',
+            description: [
+                'Teacher of Progressive Web Applications',
+                'Teacher of Mobile Development',
+            ],
+            stack: [
+                { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
+                { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'AWS DynamoDB', icon: 'https://cdn.svgporn.com/logos/aws-dynamodb.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+            ]
         },
         {
             title: 'Full-Stack Developer',
@@ -226,7 +248,8 @@ const Resume: IResume = {
     skills: [
         { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
         { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
-        { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.sv', current: true },
+        { name: 'Next', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg', current: true },
+        { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg', current: true },
         { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Context', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg', current: true },
@@ -255,6 +278,15 @@ const Resume: IResume = {
         { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg' },
     ],
     awards: [
+        {
+            title: 'Honorable Mention in the IT Engineer Degree',
+            logo: './images/utags.png',
+            location: 'Aguascalientes, Mexico',
+            issuer: 'Universidad Tecnológica de Aguascalientes',
+            description: 'Recoginized as the best grade of the generation (all engineering majors) from 2016 to 2019 to 2020',
+            link: 'https://drive.google.com/file/d/1JBGksnJ2pF-a55z6SdGj9Y612fD4Nhed/view?usp=sharing',
+            date: 'September 2016 - December 2018'
+        },
         {
             title: 'Honorable Mention in the IT Associate Degree',
             logo: './images/utr.png',
@@ -298,7 +330,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
-        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1dPCE15IHPAmg389prba0N2VEYBjW8Qjt/view?usp=sharing' },
+        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1m8Zdr_QM8qEvTgURDxIMHZBRfBrZL3H7/view?usp=sharing' },
     ]
 };
 
