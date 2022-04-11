@@ -283,7 +283,7 @@ const Resume: IResume = {
             logo: './images/utags.png',
             location: 'Aguascalientes, Mexico',
             issuer: 'Universidad Tecnológica de Aguascalientes',
-            description: 'Recoginized as the best grade of the generation (all engineering majors) from 2016 to 2019 to 2020',
+            description: 'Recoginized as the best grade of the generation (all engineering majors) from 2019 to 2020',
             link: 'https://drive.google.com/file/d/1JBGksnJ2pF-a55z6SdGj9Y612fD4Nhed/view?usp=sharing',
             date: 'January 2019 - August 2020'
         },
