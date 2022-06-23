@@ -1,7 +1,7 @@
 import { string } from "prop-types";
 import { link } from "fs";
 
-// test
+// test 2
 
 export interface IIntroduction {
     name: string;
