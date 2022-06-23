@@ -86,7 +86,7 @@ const Resume: IResume = {
         name: "Alberto Campos",
         avatar: "./images/avatar.jpeg",
         location: "México",
-        description: "IT engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
+        description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
         position: "Full Stack Engineer @ Irys"
     },
     experience: [
