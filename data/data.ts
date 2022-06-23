@@ -83,7 +83,7 @@ export interface IResume {
 
 const Resume: IResume = {
     introduction: {
-        name: "Alberto Campos",
+        name: "Alberto Campos Hdez",
         avatar: "./images/avatar.jpeg",
         location: "México",
         description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
