@@ -89,7 +89,7 @@ const Resume: IResume = {
         avatar: "./images/avatar.jpeg",
         location: "México",
         description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
-        position: "Full Stack Engineer @ Svitla Systems"
+        position: "Senior Frontend Engineer @ Svitla Systems"
     },
     experience: [
         {
@@ -273,25 +273,27 @@ const Resume: IResume = {
 
     ],
     skills: [
+        { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
         { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
         { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
-        { name: 'Next', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg', current: true },
-        { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg', current: true },
-        { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Context', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
-        { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg', current: true },
         { name: 'AWS Cloud Infrastructure', icon: 'https://cdn.svgporn.com/logos/aws.svg', current: true },
         { name: 'Cypress', icon: 'https://cdn.svgporn.com/logos/cypress.svg', current: true },
-        { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg', current: true },
+        { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg', current: true },
         { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg', current: true },
-        { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg', current: true },
         { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg', current: true },
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg', current: true },
         { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg', current: true },
+        { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg', current: true },
         { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg', current: true },
-        { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg', current: true },
         { name: 'Figma', icon: 'https://cdn.svgporn.com/logos/figma.svg', current: true },
-        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg', current: true },
+        { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
+        { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+        { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg'},
+        { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg'},
+        { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg' },
+        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
+        { name: 'Next', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg' },
         { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' },
         { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
         { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
@@ -301,7 +303,6 @@ const Resume: IResume = {
         { name: 'C#', icon: 'https://cdn.svgporn.com/logos/c.svg' },
         { name: 'Go', icon: 'https://cdn.svgporn.com/logos/go.svg' },
         { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
-        { name: 'Sass', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
         { name: 'Zeit', icon: 'https://cdn.svgporn.com/logos/zeit-icon.svg' },
     ],
     awards: [
