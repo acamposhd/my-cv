@@ -89,14 +89,39 @@ const Resume: IResume = {
         avatar: "./images/avatar.jpeg",
         location: "México",
         description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
-        position: "Full Stack Engineer @ Irys"
+        position: "Full Stack Engineer @ Svitla Systems"
     },
     experience: [
+        {
+            title: 'Senior Frontend Engineer',
+            company: 'Svitlta Systems',
+            logo: './images/svitla.png',
+            duration: 'June 2022 - Present',
+            location: 'Guadalajara, Mexico',
+            description: [
+                'Work as a senior frontend engineer within an automotive company, using React to build cutting-edge applications that streamline customer interactions with automotive software solutions',
+                "Proficiency in TypeScript and SCSS, developing high-quality, maintainable codebases that optimized application performance.",
+                "Implemented Server-Side Rendering (SSR) techniques to improve application performance and user experience.",
+                "Work with QA teams to troubleshoot issues on software prodcts and develop testing scenarios prior to coding, during sprint planning.",
+                'Collaborate with cross-functional teams to adopt Agile methodologies, resulting in increased productivity.',
+                'Acted as a mentor to other developers, providing guidance and sharing knowledge of industry best practices.',
+            ],
+            stack: [
+                { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Atomic design', icon: 'https://cdn.svgporn.com/logos/atomic.svg' },
+                { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Gitflow', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg' },
+            ],
+            link: "https://svitla.com/"
+        },
         {
             title: 'Full-Stack Engineer',
             company: 'Irys',
             logo: './images/irys.png',
-            duration: 'September 2020 - Present',
+            duration: 'September 2020 - July 2022',
             location: 'San Antonio, Texas',
             description: [
                 'Design and develop front-end interfaces, APIs and backend systems s using React, React Native, Express and AWS cloud infrastructure(Appsync, Amplify, etc).',
@@ -130,7 +155,7 @@ const Resume: IResume = {
             title: 'Professor',
             company: 'Universidad Tecnológica de Aguascalientes',
             logo: './images/utags.png',
-            duration: 'September 2021 - Present',
+            duration: 'September 2021 - December 2022',
             location: 'Aguascalientes, México',
             description: [
                 'Teacher of Progressive Web Applications',
