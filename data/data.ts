@@ -94,7 +94,7 @@ const Resume: IResume = {
     experience: [
         {
             title: 'Senior Frontend Engineer',
-            company: 'Svitlta Systems',
+            company: 'Svitla Systems',
             logo: './images/svitla.png',
             duration: 'June 2022 - Present',
             location: 'Guadalajara, Mexico',
