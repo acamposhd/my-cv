@@ -89,16 +89,19 @@ const Resume: IResume = {
         avatar: "./images/avatar.jpeg",
         location: "México",
         description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
-        position: "Senior Frontend Engineer @ Svitla Systems"
+        position: "Senior Frontend Engineer & Practice Lead @ Svitla Systems"
     },
     experience: [
         {
-            title: 'Senior Frontend Engineer',
+            title: 'Senior Frontend Engineer & Practice Lead',
             company: 'Svitla Systems',
             logo: './images/svitla.png',
             duration: 'June 2022 - Present',
             location: 'Guadalajara, Mexico',
             description: [
+                'Work as practice lead, managing a team of 30+ engineers from all across latam, providing guidance and sharing knowledge of industry best practices.',
+                'In charge of present tech talks for the company, sharing knowledge of the latest technologies and trends.',
+                'Applying technical interviews to candidates, ensuring the quality of the engineers that are hired.',
                 'Work as a senior frontend engineer within an automotive company, using React to build cutting-edge applications that streamline customer interactions with automotive software solutions',
                 "Proficiency in TypeScript and SCSS, developing high-quality, maintainable codebases that optimized application performance.",
                 "Implemented Server-Side Rendering (SSR) techniques to improve application performance and user experience.",
@@ -158,8 +161,12 @@ const Resume: IResume = {
             duration: 'September 2021 - December 2022',
             location: 'Aguascalientes, México',
             description: [
-                'Teacher of Progressive Web Applications',
-                'Teacher of Mobile Development',
+                'Progressive Web Applications',
+                'Mobile Development',
+                'Web Development',
+                'Software Architecture',
+                'Service Oriented Web Applications',
+                'Web Applications for i4.0',
             ],
             stack: [
                 { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
@@ -358,7 +365,7 @@ const Resume: IResume = {
         { name: 'Alberto Campos', icon: './images/linkedin.png', link: 'https://www.linkedin.com/in/albertocamposh/' },
         { name: 'acamposhd', icon: 'https://cdn.svgporn.com/logos/github-icon.svg', link: 'https://github.com/acamposhd' },
         { name: 'albertocamposhdez@hotmail.com', icon: 'https://cdn.svgporn.com/logos/google-gmail.svg', link: 'mailto:albertocamposhdez@hotmail.com' },
-        { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1m8Zdr_QM8qEvTgURDxIMHZBRfBrZL3H7/view?usp=sharing' },
+        // { name: 'CV PDF Version', icon: 'https://img.icons8.com/offices/30/000000/pdf.png', link: 'https://drive.google.com/file/d/1m8Zdr_QM8qEvTgURDxIMHZBRfBrZL3H7/view?usp=sharing' },
     ]
 };
 
