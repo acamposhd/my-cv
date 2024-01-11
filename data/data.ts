@@ -85,10 +85,10 @@ export interface IResume {
 
 const Resume: IResume = {
     introduction: {
-        name: "Alberto Campos Hdez",
+        name: "Alberto Campos Hernández",
         avatar: "./images/profile.jpeg",
         location: "México",
-        description: "Software engineer specialized in software development, committed with society, adaptable to changes and enthusiastic to participate in collaborative work.",
+        description: "Rooted at the intersection of technology, education, and innovation, I am a software engineer deeply committed to social wellbeing.",
         position: "Senior Frontend Engineer & Practice Lead @ Svitla Systems"
     },
     experience: [
@@ -119,6 +119,27 @@ const Resume: IResume = {
                 { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg' },
             ],
             link: "https://svitla.com/"
+        },
+        {
+            title: 'Professor',
+            company: 'Universidad Tecnológica Metropolitana de Alta Tecnología',
+            logo: './images/utmat.png',
+            duration: 'April 2023 - Currently',
+            location: 'Aguascalientes, México',
+            description: [
+                'Object Oriented Programming',
+                'Applied Data Structures',
+                'Service Oriented Web Applications',
+                'Databases',
+                'Operating Systems',
+            ],
+            stack: [
+                { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg' },
+                { name: 'JavScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg' },
+                { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
+                { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+            ]
         },
         {
             title: 'Full-Stack Engineer',
