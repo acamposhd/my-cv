@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Router from "next/router";
-import withGA from "next-ga";
 
 import data from "../data/data";
 import Experience from "../components/experience";
@@ -10,8 +8,9 @@ import Skills from "../components/skills";
 import Languages from "../components/languages";
 import Contact from "../components/contact";
 import Awards from "../components/awards";
-import { GetStaticProps } from "next";
 import Publications from "../components/publications";
+import Projects from "../components/projects";
+import Certifications from "../components/certifications";
 
 const styles = (
     <style jsx global>{`
@@ -122,6 +121,7 @@ const Resume = () => (
         <section className="Resume-content">
             <section className="Resume-main">
                 <Experience data={data.experience} />
+                <Projects data={data.projects} />
                 <Education data={data.education} />
                 <Publications data={data.publications} />
             </section>
@@ -135,6 +135,7 @@ const Resume = () => (
                     title="I Have Used"
                 />
                 <Languages data={data.languages} />
+                <Certifications data={data.certifications} />
                 <Awards data={data.awards} />
                 <Contact data={data.contact} />
             </section>
@@ -143,7 +144,4 @@ const Resume = () => (
     </section>
 );
 
-// const Pause = () => <p>Coming soon</p>;
-
-export default withGA(process.env.GA_ID, Router)(Resume);
-// export default Pause;
+export default Resume;

@@ -1,0 +1,104 @@
+import { IProject } from "../data/data";
+
+interface ProjectsProps {
+    data: IProject[];
+}
+
+const Projects = ({ data }: ProjectsProps) => {
+    return (
+        <>
+            <h3>Projects</h3>
+            <article className="Experience">
+                {
+                    data.map((project, index) => (
+                        <div key={`project_${index}`} className="Experience-work">
+                            <div className="Experience-work-title">
+                                <h4 className="Experience-work-position">{project.name}</h4>
+                                <span className="Experience-work-duration">{project.duration}</span>
+                            </div>
+                            <div className="Experience-work-place">
+                                {project.logo && <img src={project.logo} alt={project.name} />}
+                                <div>
+                                    <h6 className="Experience-work-company">{project.role}{project.link && <a className="Languages-links" href={project.link} target="_blank"> <img src="https://img.icons8.com/officexs/16/000000/external-link.png" /></a>}</h6>
+                                </div>
+                            </div>
+
+                            <ul className="Experience-work-description">
+                                {project.description.map((point, index) => (
+                                    <li key={`point_${index}`}>{point}</li>
+                                ))}
+                            </ul>
+                            <div className="Experience-work-stack">
+                                {project.stack.map((tool, index) => (
+                                    <div className="Experience-work-tool" key={`tool_${index}`}>
+                                        <img src={tool.icon} />
+                                        <span>{tool.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                }
+            </article>
+            <style jsx>
+                {`
+                    .Experience {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 1rem;
+                    }
+                    .Experience-work {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 3rem 0;
+                        border-bottom: 1px solid rgba(200,200,200, .2);
+                    }
+                    .Experience-work:first-child {
+                        padding-top: 0;
+                    }
+                    .Experience-work-title {
+                        display: flex;
+                        align-items: baseline;
+                    }
+                    .Experience-work-duration {
+                        font-size: 1rem;
+                        margin: 0 1rem;
+                        opacity: .5;
+                        margin-left: 1rem;
+                    }
+                    .Experience-work-place {
+                        display: flex;
+                        align-items: center;
+                        margin: .5rem 0;
+                    }
+                    .Experience-work-place img {
+                        max-height: 45px;
+                        max-width: 100px;
+                        justify-self: center;
+                    }
+                    .Experience-work-place div {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1rem;
+                    }
+                    .Experience-work-stack {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 1rem;
+                    }
+                    .Experience-work-tool {
+                        display: flex;
+                        align-items: center;
+                        margin: .5rem 1rem;
+                    }
+                    .Experience-work-tool img {
+                        width: 20px;
+                        margin-right: .5rem;
+                    }
+                `}
+            </style>
+        </>
+    );
+};
+
+export default Projects;
