@@ -116,19 +116,27 @@ const Resume: IResume = {
             location: 'Remote (Aguascalientes, México)',
             description: [
                 'Architect and develop React/TypeScript front-end applications for automotive and enterprise clients, implementing SSR, dynamic code-splitting, and performance optimisation strategies.',
+                'Act as practice lead for a team of 30+ engineers across LATAM, providing technical guidance and sharing industry best practices.',
+                'Deliver internal tech talks, sharing knowledge of the latest technologies and trends across engineering teams.',
+                'Conduct technical interviews for candidates to ensure the engineering quality bar is upheld across the company.',
                 'Define and enforce front-end architecture patterns across teams, conducting code reviews and establishing coding standards that reduced production defect rates via SonarQube gate enforcement.',
                 'Drive CI/CD pipeline improvements through Jenkins, shortening release cycles and increasing deployment reliability across multiple concurrent client engagements.',
-                'Collaborate directly with product and design stakeholders to translate business requirements into scalable component-based architectures.',
+                'Collaborate directly with product, design, and QA stakeholders to translate business requirements into scalable component-based architectures and define test scenarios during sprint planning.',
+                'Mentor other developers, providing one-on-one guidance and supporting their growth on industry best practices.',
             ],
             stack: [
                 { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
                 { name: 'Next.js', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg' },
                 { name: 'SCSS', icon: 'https://cdn.svgporn.com/logos/sass.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Atomic design', icon: 'https://cdn.svgporn.com/logos/atomic.svg' },
                 { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' },
                 { name: 'SonarQube', icon: 'https://cdn.svgporn.com/logos/sonarqube.svg' },
                 { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg' },
+                { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+                { name: 'Gitflow', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
             ],
             link: "https://svitla.com/"
         },
@@ -177,6 +185,31 @@ const Resume: IResume = {
             link: "https://heyirys.com/"
         },
         {
+            title: 'Professor',
+            company: 'Universidad Tecnológica de Aguascalientes',
+            logo: './images/utags.png',
+            duration: 'Sep 2021 — Dec 2022',
+            location: 'Aguascalientes, México',
+            description: [
+                'Progressive Web Applications',
+                'Mobile Development',
+                'Web Development',
+                'Software Architecture',
+                'Service Oriented Web Applications',
+                'Web Applications for i4.0',
+            ],
+            stack: [
+                { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
+                { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'AWS DynamoDB', icon: 'https://cdn.svgporn.com/logos/aws-dynamodb.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+            ]
+        },
+        {
             title: 'Jr. → Mid → Sr. Full-Stack Engineer',
             company: 'Thincrs',
             logo: './images/thincrs.png',
@@ -200,6 +233,28 @@ const Resume: IResume = {
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
             ],
             link: "https://thincrs.com/"
+        },
+        {
+            title: 'Full-Stack Developer',
+            company: 'Universidad Tecnológica de Aguascalientes',
+            logo: './images/utags.png',
+            duration: 'Jan 2019 — Dec 2020',
+            location: 'Aguascalientes, México',
+            description: [
+                'Full-stack development across multiple internal projects using the MEAN and MEIN stacks.',
+                'Led cross-functional teams and contributed to planning/design phases for new applications.',
+                'Subject teacher for multi-platform application development, mentoring junior developers and students.',
+            ],
+            stack: [
+                { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
+                { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg' },
+                { name: 'Angular', icon: 'https://cdn.svgporn.com/logos/angular-icon.svg' },
+                { name: 'Bootstrap', icon: 'https://cdn.svgporn.com/logos/bootstrap.svg' },
+                { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
+                { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
+                { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
+                { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
+            ]
         },
     ],
     projects: [
@@ -228,6 +283,36 @@ const Resume: IResume = {
         { name: 'Massachusetts Institute of Technology', logo: './images/mit.svg', title: [{ name: 'Leading Digital Transformation (online)', link: 'https://drive.google.com/file/d/1mLq9PracAVlS_jGonx4NOPMuSInTR3g0/view?usp=sharing' }], duration: '2020' },
         { name: 'Algonquin College', logo: './images/ac.png', title: [{ name: 'Programming & IT Management — Academic Exchange (Ottawa)', link: 'https://drive.google.com/file/d/1WJXy2NJ5pv7u_OabFpm6rO_ItWa1WjwA/view?usp=sharing' }], duration: 'Sep 2019 — Dec 2019' },
         { name: 'Pima Community College', logo: './images/pima.png', title: [{ name: 'ESL & Business Management — Academic Exchange (Tucson)', link: 'https://drive.google.com/drive/folders/1EWrExdYOMfuhdA84hI8r3JPFdSx5zyeT?usp=sharing' }], duration: 'Aug 2016 — Dec 2016' },
+        { name: 'Universidad Autónoma de Aguascalientes', logo: './images/uaa.jpg', title: [{ name: 'Android Development Course', link: 'https://drive.google.com/file/d/1fjpchjzOeNHi6nugN1G4Kytz0sBcvT8w/view?usp=sharing' }], duration: 'Mar 2018 — Jun 2018' },
+        { name: 'LinkedIn Learning', logo: 'https://cdn.svgporn.com/logos/linkedin.svg', title: [{ name: 'Visual Studio Code Course', link: 'https://drive.google.com/file/d/1d4fwyjpDkaku49nkpvrslnZzh3bUkrRU/view?usp=sharing' }], duration: '2019' },
+        {
+            name: 'Platzi', logo: './images/platzi.png', title: [
+                { name: 'Carrera Bases de Datos', link: "https://drive.google.com/file/d/1ykl1lhA9PAFY4SswFHnOVP77bTQafl_s/view?usp=sharing" },
+                { name: 'Carrera Escuela de Inglés', link: "https://drive.google.com/file/d/1_QInJ20Q8-cQL3UP3Gv1AYK9GrMlue7U/view?usp=sharing" },
+                { name: 'Carrera Desarrollo Backend con Go', link: "https://drive.google.com/file/d/1k5JvGKuqDJs4y6AEjOa4KPOnGav9l_6x/view?usp=sharing" },
+                { name: 'Curso de Java SE', link: "https://drive.google.com/file/d/1du9GL1WuQUxHVV2g2qfKBh4_MMy0dM34/view?usp=sharing" },
+                { name: 'Curso de Go', link: "https://drive.google.com/file/d/16K82p7zcTB2q7Rg2ZVijWu00l23Y12F1/view?usp=sharing" },
+                { name: 'Curso de MongoDB', link: "https://drive.google.com/file/d/199HYQkywELbg6Vjcs0-Uu8FnEcqiQzIl/view?usp=sharing" },
+                { name: 'Curso de Buenas Prácticas', link: "https://drive.google.com/file/d/1h3tjSbAI5iR19MmeBKXUfw21IhQvGoTg/view?usp=sharing" },
+                { name: 'Curso de HTML y CSS', link: "https://drive.google.com/file/d/1CDvBQhLxaLGKGril1Qh4OC042ftlQgfk/view?usp=sharing" },
+                { name: 'Curso de Seguridad Informática', link: "https://drive.google.com/file/d/13WR_pUUhF2HdAtiSDh98IPKUFfYcRT3F/view?usp=sharing" },
+                { name: 'Curso de PHP con Laravel', link: "https://drive.google.com/file/d/1xoYfitKYbzfGeXt2Km96GQqSFySntJe_/view?usp=sharing" },
+                { name: 'Curso de POO', link: "https://drive.google.com/file/d/17yGlcp-bfF-z0IQ3LupbESaRKbVixN18/view?usp=sharing" },
+                { name: 'Curso de Redes de Internet', link: "https://drive.google.com/file/d/17DvfvnblWyTMzXAkcdR3iu2yNPApU1Vb/view?usp=sharing" },
+                { name: 'Curso de SCRUM', link: "https://drive.google.com/file/d/1B0ZLkBKKt-3eTgcLfu8WeftTxh5o4Hqq/view?usp=sharing" },
+                { name: 'Curso de SQL y MySQL', link: "https://drive.google.com/file/d/1hI3P6lFFxy1jMpTYOjyClrX09FGgUYfz/view?usp=sharing" },
+                { name: 'Curso de Bases de Datos', link: "https://drive.google.com/file/d/1QP1fXI-DWCUb-wWKkA7jpi28h4MhLAFc/view?usp=sharing" },
+                { name: 'Curso de Línea de Comandos', link: "https://drive.google.com/file/d/1TwWhbGH5YM2gewWqri0VZ5-tyVgqkESx/view?usp=sharing" },
+                { name: 'Curso de Google Cloud Platform', link: "https://drive.google.com/file/d/1ILwXNzlSDcIODnShOxWcxs-ekE6k27Yy/view?usp=sharing" },
+            ], duration: '2019 — 2020'
+        },
+        { name: 'MongoDB University', logo: './images/mongou.png', title: [{ name: 'MongoDB Basics', link: 'https://drive.google.com/file/d/1l1Sz3XH7WRcCfPFAHeBceLEa99VJVdhg/view?usp=sharing' }], duration: 'Aug 2019' },
+        {
+            name: 'HackerRank', logo: './images/hackerrank.png', title: [
+                { name: 'JavaScript Basics', link: 'https://drive.google.com/file/d/1FFPlmVaWSeWPOQZan1SBaOsZRMGyomeM/view?usp=sharing' },
+                { name: 'REST API Intermediate', link: 'https://drive.google.com/file/d/172FzWrhOcD8JJYBe9j6rOlqQuWMtvFIA/view?usp=sharing' },
+            ], duration: 'Sep 2020'
+        },
     ],
     publications: [
         {
