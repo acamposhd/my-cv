@@ -97,25 +97,19 @@ const Projects = ({ data }: ProjectsProps) => {
                         margin: .15rem 0;
                     }
                     .Experience-work-stack {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                        gap: .5rem 1rem;
+                        display: flex;
+                        flex-wrap: wrap;
                         margin-top: 1rem;
                     }
                     .Experience-work-tool {
                         display: flex;
                         align-items: center;
-                        min-width: 0;
+                        margin: .5rem 1rem .5rem 0;
                     }
                     .Experience-work-tool img {
                         width: 20px;
                         margin-right: .5rem;
                         flex-shrink: 0;
-                    }
-                    .Experience-work-tool span {
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
                     }
                 `}
             </style>
