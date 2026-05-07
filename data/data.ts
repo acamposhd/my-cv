@@ -6,13 +6,15 @@ export interface IIntroduction {
     position: string;
 }
 
+export type IDescriptionItem = string | string[];
+
 export interface IWork {
     title: string;
     logo: string;
     company: string;
     location: string;
     duration: string;
-    description: string[];
+    description: IDescriptionItem[];
     stack: { name: string; icon: string; }[];
     link?: string;
 }
@@ -72,7 +74,7 @@ export interface IProject {
     role: string;
     logo?: string;
     duration: string;
-    description: string[];
+    description: IDescriptionItem[];
     stack: { name: string; icon: string; }[];
     link?: string;
 }
@@ -151,19 +153,29 @@ const Resume: IResume = {
                 'Mentored students through team projects, providing code reviews, technical guidance, and one-on-one support to help them progress toward industry-ready skills.',
                 'Collaborated with academic peers on program planning and continuous improvement of course content based on emerging technologies and student outcomes.',
                 'Subjects taught:',
-                'Programming for Artificial Intelligence',
-                'Cloud Databases',
-                'Database Systems',
-                'Object-Oriented Programming',
-                'Data Structures',
-                'Operating Systems',
-                'Cybersecurity',
+                [
+                    'Programming for Artificial Intelligence',
+                    'Cloud Databases',
+                    'Database Systems',
+                    'Object-Oriented Programming',
+                    'Data Structures',
+                    'Operating Systems',
+                    'Cybersecurity',
+                ],
             ],
             stack: [
                 { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg' },
-                { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg' },
-                { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
+                { name: 'Java', icon: 'https://cdn.svgporn.com/logos/java.svg' },
+                { name: 'C++', icon: 'https://cdn.svgporn.com/logos/c-plusplus.svg' },
+                { name: 'PyTorch', icon: 'https://cdn.svgporn.com/logos/pytorch-icon.svg' },
+                { name: 'scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg' },
+                { name: 'Pandas', icon: 'https://cdn.svgporn.com/logos/pandas.svg' },
                 { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
+                { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
+                { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
+                { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
+                { name: 'Linux', icon: 'https://cdn.svgporn.com/logos/linux-tux.svg' },
+                { name: 'Bash', icon: 'https://cdn.svgporn.com/logos/bash-icon.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
             ]
         },
@@ -207,17 +219,25 @@ const Resume: IResume = {
                 'Mentored students through team projects, providing code reviews, technical guidance, and one-on-one support to help them progress toward industry-ready skills.',
                 'Collaborated with academic peers on program planning and continuous improvement of course content based on emerging technologies and student outcomes.',
                 'Subjects taught:',
-                'Progressive Web Applications',
-                'Mobile Development',
-                'Web Development',
-                'Software Architecture',
-                'Service Oriented Web Applications',
-                'Web Applications for Industry 4.0',
+                [
+                    'Progressive Web Applications',
+                    'Mobile Development',
+                    'Web Development',
+                    'Software Architecture',
+                    'Service Oriented Web Applications',
+                    'Web Applications for Industry 4.0',
+                ],
             ],
             stack: [
                 { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg' },
-                { name: 'Context API', icon: 'https://cdn.svgporn.com/logos/react.svg' },
                 { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+                { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg' },
+                { name: 'TypeScript', icon: 'https://cdn.svgporn.com/logos/typescript-icon.svg' },
+                { name: 'HTML5', icon: 'https://cdn.svgporn.com/logos/html-5.svg' },
+                { name: 'CSS3', icon: 'https://cdn.svgporn.com/logos/css-3.svg' },
+                { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
+                { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg' },
+                { name: 'GraphQL', icon: 'https://cdn.svgporn.com/logos/graphql.svg' },
                 { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
                 { name: 'AWS Cognito', icon: 'https://cdn.svgporn.com/logos/aws-cognito.svg' },
                 { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
@@ -245,7 +265,7 @@ const Resume: IResume = {
                 { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg' },
                 { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
                 { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg' },
-                { name: 'scikit-learn', icon: 'https://cdn.svgporn.com/logos/scikit-learn.svg' },
+                { name: 'scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg' },
                 { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
                 { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' },
                 { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg' },
@@ -281,8 +301,8 @@ const Resume: IResume = {
             role: 'Independent project',
             duration: 'In progress',
             description: [
-                'Building a native macOS menu-bar application for AI-powered meeting recording, real-time transcription, and smart note-taking, with LLM-based summarisation and action-item extraction.',
-                'Full product ownership: Core Audio pipeline for system and microphone capture, SwiftUI interface following macOS HIG, and Anthropic/OpenAI API integration for contextual note generation.',
+                'Building a native macOS application — both menu-bar and full desktop experience — for AI-powered meeting recording, real-time transcription, and smart note-taking, with LLM-based summarisation and action-item extraction.',
+                'Full product ownership: Core Audio pipeline for system and microphone capture, SwiftUI interface following macOS HIG across menu-bar and desktop windows, and Anthropic/OpenAI API integration for contextual note generation.',
             ],
             stack: [
                 { name: 'Swift', icon: 'https://cdn.svgporn.com/logos/swift.svg' },
@@ -350,47 +370,49 @@ const Resume: IResume = {
         { name: 'JavaScript', icon: 'https://cdn.svgporn.com/logos/javascript.svg', current: true },
         { name: 'React', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
         { name: 'Next.js', icon: 'https://cdn.svgporn.com/logos/nextjs-icon.svg', current: true },
-        { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg', current: true },
-        { name: 'Tailwind CSS', icon: 'https://cdn.svgporn.com/logos/tailwindcss-icon.svg', current: true },
         { name: 'SCSS', icon: 'https://cdn.svgporn.com/logos/sass.svg', current: true },
-        { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg', current: true },
-        { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg', current: true },
-        { name: 'GraphQL', icon: 'https://cdn.svgporn.com/logos/graphql.svg', current: true },
-        { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg', current: true },
-        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg', current: true },
-        { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg', current: true },
-        { name: 'Figma', icon: 'https://cdn.svgporn.com/logos/figma.svg', current: true },
         { name: 'Jest', icon: 'https://cdn.svgporn.com/logos/jest.svg', current: true },
+        { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg', current: true },
+        { name: 'SonarQube', icon: 'https://cdn.svgporn.com/logos/sonarqube.svg', current: true },
+        { name: 'Swift', icon: 'https://cdn.svgporn.com/logos/swift.svg', current: true },
+        { name: 'SwiftUI', icon: 'https://cdn.svgporn.com/logos/swift.svg', current: true },
+        { name: 'Xcode', icon: 'https://cdn.svgporn.com/logos/xcode.svg', current: true },
+        { name: 'Anthropic API', icon: 'https://cdn.svgporn.com/logos/anthropic-icon.svg', current: true },
+        { name: 'OpenAI API', icon: 'https://cdn.svgporn.com/logos/openai-icon.svg', current: true },
+        { name: 'Python', icon: 'https://cdn.svgporn.com/logos/python.svg', current: true },
+        { name: 'PyTorch', icon: 'https://cdn.svgporn.com/logos/pytorch-icon.svg', current: true },
+        { name: 'TensorFlow', icon: 'https://cdn.svgporn.com/logos/tensorflow.svg', current: true },
+        { name: 'scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', current: true },
+        { name: 'Pandas', icon: 'https://cdn.svgporn.com/logos/pandas.svg', current: true },
+        { name: 'Git', icon: 'https://cdn.svgporn.com/logos/git-icon.svg', current: true },
+        { name: 'React Native', icon: 'https://cdn.svgporn.com/logos/react.svg' },
+        { name: 'Tailwind CSS', icon: 'https://cdn.svgporn.com/logos/tailwindcss-icon.svg' },
         { name: 'Redux', icon: 'https://cdn.svgporn.com/logos/redux.svg' },
         { name: 'Zustand', icon: 'https://cdn.svgporn.com/logos/react.svg' },
         { name: 'React Query / SWR', icon: 'https://cdn.svgporn.com/logos/react-query-icon.svg' },
         { name: 'Expo', icon: 'https://cdn.svgporn.com/logos/expo-icon.svg' },
         { name: 'Ionic', icon: 'https://cdn.svgporn.com/logos/ionic.svg' },
+        { name: 'Node.js', icon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg' },
         { name: 'Express', icon: 'https://cdn.svgporn.com/logos/express.svg' },
+        { name: 'GraphQL', icon: 'https://cdn.svgporn.com/logos/graphql.svg' },
         { name: 'Flask', icon: 'https://cdn.svgporn.com/logos/flask.svg' },
         { name: 'Django', icon: 'https://cdn.svgporn.com/logos/django.svg' },
         { name: 'FastAPI', icon: 'https://cdn.svgporn.com/logos/fastapi-icon.svg' },
         { name: 'Laravel', icon: 'https://cdn.svgporn.com/logos/laravel.svg' },
         { name: 'PHP', icon: 'https://cdn.svgporn.com/logos/php.svg' },
-        { name: 'PyTorch', icon: 'https://cdn.svgporn.com/logos/pytorch-icon.svg' },
-        { name: 'TensorFlow', icon: 'https://cdn.svgporn.com/logos/tensorflow.svg' },
-        { name: 'scikit-learn', icon: 'https://cdn.svgporn.com/logos/scikit-learn.svg' },
-        { name: 'Pandas', icon: 'https://cdn.svgporn.com/logos/pandas.svg' },
-        { name: 'Anthropic API', icon: 'https://cdn.svgporn.com/logos/anthropic-icon.svg' },
-        { name: 'OpenAI API', icon: 'https://cdn.svgporn.com/logos/openai-icon.svg' },
+        { name: 'AWS', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
         { name: 'AWS Lambda', icon: 'https://cdn.svgporn.com/logos/aws-lambda.svg' },
         { name: 'AWS DynamoDB', icon: 'https://cdn.svgporn.com/logos/aws-dynamodb.svg' },
         { name: 'AWS AppSync', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
         { name: 'AWS Amplify', icon: 'https://cdn.svgporn.com/logos/aws.svg' },
-        { name: 'Supabase', icon: 'https://cdn.svgporn.com/logos/supabase-icon.svg' },
+        { name: 'Supabase', icon: 'https://cdn.svgporn.com/logos/supabase-icon.svg', current: true },
         { name: 'Firebase', icon: 'https://cdn.svgporn.com/logos/firebase.svg' },
-        { name: 'Jenkins', icon: 'https://cdn.svgporn.com/logos/jenkins.svg' },
         { name: 'GitHub Actions', icon: 'https://cdn.svgporn.com/logos/github-actions.svg' },
-        { name: 'SonarQube', icon: 'https://cdn.svgporn.com/logos/sonarqube.svg' },
+        { name: 'PostgreSQL', icon: 'https://cdn.svgporn.com/logos/postgresql.svg' },
         { name: 'MySQL', icon: 'https://cdn.svgporn.com/logos/mysql.svg' },
         { name: 'MongoDB', icon: 'https://cdn.svgporn.com/logos/mongodb.svg' },
         { name: 'SQLite', icon: 'https://cdn.svgporn.com/logos/sqlite.svg' },
-        { name: 'Xcode', icon: 'https://cdn.svgporn.com/logos/xcode.svg' },
+        { name: 'Figma', icon: 'https://cdn.svgporn.com/logos/figma.svg' },
         { name: 'Postman', icon: 'https://cdn.svgporn.com/logos/postman-icon.svg' },
         { name: 'Jira', icon: 'https://cdn.svgporn.com/logos/jira.svg' },
     ],
@@ -438,18 +460,21 @@ const Resume: IResume = {
             issuer: 'Amazon Web Services',
             logo: 'https://cdn.svgporn.com/logos/aws.svg',
             credentialId: 'HLQ960NK8JBQ189Q',
+            link: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/HLQ960NK8JBQ189Q',
         },
         {
             name: 'Fundamentals of Deep Learning',
             issuer: 'NVIDIA Deep Learning Institute',
             logo: 'https://cdn.svgporn.com/logos/nvidia.svg',
             credentialId: '1tO0Ys3ITkGJkXM3sgBKrQ',
+            link: 'https://learn.nvidia.com/certificates?id=1utL1iXDTuO6YOPTQyFXjQ',
         },
         {
             name: 'Generative AI with Diffusion Models',
             issuer: 'NVIDIA Deep Learning Institute',
             logo: 'https://cdn.svgporn.com/logos/nvidia.svg',
             credentialId: 'TauXuWfURMOBYNutOVkopw',
+            link: 'https://learn.nvidia.com/certificates?id=D6YKbMsAS4CBKQSopnBx-A',
         },
         {
             name: 'Certificado de Alta Especialidad: Inteligencia artificial y aprendizaje automático',
@@ -466,7 +491,7 @@ const Resume: IResume = {
             link: 'https://www.credential.net/7f0f1a34-5c4e-436e-a615-8ea03a80e1e5#acc.5SNe3mi0',
         },
         {
-            name: 'Certificado de Alta Especialidad: Internet de las cosas y redes de sensores (LÍNEA 2024)',
+            name: 'Certificado de Alta Especialidad: Internet de las cosas y redes de sensores',
             issuer: 'Tecnológico de Monterrey',
             logo: './images/itesm.svg',
             date: 'Apr 20, 2024',

@@ -24,13 +24,21 @@ const Projects = ({ data }: ProjectsProps) => {
                             </div>
 
                             <ul className="Experience-work-description">
-                                {project.description.map((point, index) => (
-                                    <li key={`point_${index}`}>{point}</li>
+                                {project.description.map((point, pointIndex) => (
+                                    Array.isArray(point) ? (
+                                        <ul key={`subpoints_${pointIndex}`} className="Experience-work-subpoints">
+                                            {point.map((sub, subIndex) => (
+                                                <li key={`sub_${pointIndex}_${subIndex}`}>{sub}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <li key={`point_${pointIndex}`}>{point}</li>
+                                    )
                                 ))}
                             </ul>
                             <div className="Experience-work-stack">
-                                {project.stack.map((tool, index) => (
-                                    <div className="Experience-work-tool" key={`tool_${index}`}>
+                                {project.stack.map((tool, toolIndex) => (
+                                    <div className="Experience-work-tool" key={`tool_${toolIndex}`}>
                                         <img src={tool.icon} />
                                         <span>{tool.name}</span>
                                     </div>
@@ -62,9 +70,8 @@ const Projects = ({ data }: ProjectsProps) => {
                     }
                     .Experience-work-duration {
                         font-size: 1rem;
-                        margin: 0 1rem;
-                        opacity: .5;
                         margin-left: 1rem;
+                        opacity: .5;
                     }
                     .Experience-work-place {
                         display: flex;
@@ -81,19 +88,34 @@ const Projects = ({ data }: ProjectsProps) => {
                         flex-direction: column;
                         margin-left: 1rem;
                     }
+                    .Experience-work-subpoints {
+                        margin: .25rem 0 .25rem 1.5rem;
+                        padding-left: 1rem;
+                        list-style-type: circle;
+                    }
+                    .Experience-work-subpoints li {
+                        margin: .15rem 0;
+                    }
                     .Experience-work-stack {
-                        display: flex;
-                        flex-wrap: wrap;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                        gap: .5rem 1rem;
                         margin-top: 1rem;
                     }
                     .Experience-work-tool {
                         display: flex;
                         align-items: center;
-                        margin: .5rem 1rem;
+                        min-width: 0;
                     }
                     .Experience-work-tool img {
                         width: 20px;
                         margin-right: .5rem;
+                        flex-shrink: 0;
+                    }
+                    .Experience-work-tool span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                 `}
             </style>

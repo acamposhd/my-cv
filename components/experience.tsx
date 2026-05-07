@@ -13,25 +13,33 @@ const Experience = ({ data }: ExperienceProps) => {
                     data.map((work, index) => (
                         <div key={`work_${index}`} className="Experience-work">
                             <div className="Experience-work-title">
-                    <h4 className="Experience-work-position">{work.title}</h4>
+                                <h4 className="Experience-work-position">{work.title}</h4>
                                 <span className="Experience-work-duration">{work.duration}</span>
                             </div>
                             <div className="Experience-work-place">
-                                <img src={work.logo} alt={work.company}/>
+                                <img src={work.logo} alt={work.company} />
                                 <div>
-                                    <h6 className="Experience-work-company">{work.company} {work.link&&<a className="Languages-links" href={work.link} target="_blank"> <img src="https://img.icons8.com/officexs/16/000000/external-link.png"/></a>}</h6>
+                                    <h6 className="Experience-work-company">{work.company} {work.link && <a className="Languages-links" href={work.link} target="_blank"> <img src="https://img.icons8.com/officexs/16/000000/external-link.png" /></a>}</h6>
                                     <span className="Experience-work-location">{work.location}</span>
                                 </div>
                             </div>
 
                             <ul className="Experience-work-description">
-                                {work.description.map((point, index) => (
-                                    <li key={`point_${index}`} >{point}</li>
+                                {work.description.map((point, pointIndex) => (
+                                    Array.isArray(point) ? (
+                                        <ul key={`subpoints_${pointIndex}`} className="Experience-work-subpoints">
+                                            {point.map((sub, subIndex) => (
+                                                <li key={`sub_${pointIndex}_${subIndex}`}>{sub}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <li key={`point_${pointIndex}`}>{point}</li>
+                                    )
                                 ))}
                             </ul>
                             <div className="Experience-work-stack">
-                                {work.stack.map((tool, index) => (
-                                    <div className="Experience-work-tool" key={`tool_${index}`} >
+                                {work.stack.map((tool, toolIndex) => (
+                                    <div className="Experience-work-tool" key={`tool_${toolIndex}`}>
                                         <img src={tool.icon} />
                                         <span>{tool.name}</span>
                                     </div>
@@ -45,7 +53,7 @@ const Experience = ({ data }: ExperienceProps) => {
                 {`
                     .Experience {
                         display: flex;
-                        flex-direction: column;    
+                        flex-direction: column;
                         padding: 0 1rem;
                     }
                     .Experience-work {
@@ -54,54 +62,61 @@ const Experience = ({ data }: ExperienceProps) => {
                         padding: 3rem 0;
                         border-bottom: 1px solid rgba(200,200,200, .2);
                     }
-                    .Experience-work:first-child{
+                    .Experience-work:first-child {
                         padding-top: 0;
                     }
                     .Experience-work-title {
                         display: flex;
                         align-items: baseline;
                     }
-
                     .Experience-work-duration {
                         font-size: 1rem;
-                        margin: 0 1rem
-                        opacity: .5;
                         margin-left: 1rem;
+                        opacity: .5;
                     }
-
                     .Experience-work-place {
                         display: flex;
                         align-items: center;
                         margin: .5rem 0;
                     }
-
                     .Experience-work-place img {
                         max-height: 45px;
                         max-width: 100px;
-                        justify-self: center
+                        justify-self: center;
                     }
-
                     .Experience-work-place div {
                         display: flex;
                         flex-direction: column;
                         margin-left: 1rem;
                     }
-
-                    .Experience-work-stack{
-                        display: flex;
-                        flex-wrap: wrap;
+                    .Experience-work-subpoints {
+                        margin: .25rem 0 .25rem 1.5rem;
+                        padding-left: 1rem;
+                        list-style-type: circle;
+                    }
+                    .Experience-work-subpoints li {
+                        margin: .15rem 0;
+                    }
+                    .Experience-work-stack {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                        gap: .5rem 1rem;
                         margin-top: 1rem;
                     }
-
-                    .Experience-work-tool{
+                    .Experience-work-tool {
                         display: flex;
                         align-items: center;
-                        margin: .5rem 1rem;
+                        min-width: 0;
                     }
-
-                    .Experience-work-tool img{
+                    .Experience-work-tool img {
                         width: 20px;
                         margin-right: .5rem;
+                        flex-shrink: 0;
+                    }
+                    .Experience-work-tool span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                 `}
             </style>
